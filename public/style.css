@@ -46,9 +46,45 @@ header ul {
     background-color: var(--label);
 }
 
+.saldo h3 {
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
 .relatorio-pgto-futuro {
     background-color: var(--card);
     margin: 10px 0 0 0;
+}
+
+.resumo {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.resumo h3 {
+    margin: auto;
+    font-size: 16px;
+}
+
+.resumo h4 {
+    margin: 10px auto;
+    padding: 5px 30px;
+    font-size: 16px;
+    background-color: var(--label);
+}
+
+table {
+    margin: 10px auto;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.detalhes {
+    margin: auto;
+}
+
+.detalhes h3 {
+    border: 1px solid;
 }
 
 .relatorio-pgto-aberto {
