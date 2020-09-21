@@ -9,11 +9,17 @@
     --linha2: rgb(131, 56, 26);
 }
 
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+body {
     font-family: Poppins;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -33,7 +39,10 @@ header ul {
 }
 
 .container {
-    margin: 0 50px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100%;
+    margin: 0 auto 50px auto;
 }
 
 .saldo {
@@ -117,7 +126,12 @@ footer {
     margin: 5px 0 0 0;
     padding: 5px 0 5px 0;
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
     font-style: italic;
     color: firebrick;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

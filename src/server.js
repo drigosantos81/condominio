@@ -6,12 +6,10 @@ const nunjucks = require('nunjucks');
 
 const server = express();
 
-// server.use(express.static(__dirname, 'public'));
 server.use(express.static('public'));
-
-// server.use(express.static('img'));
-// server.use(express.urlencoded({ extended: true }));
-// server.use(methodOverride('_method'));
+server.use(express.static('public/img'));
+server.use(express.urlencoded({ extended: true }));
+server.use(methodOverride('_method'));
 // server.use(routes);
 
 server.set("view engine", "html");
