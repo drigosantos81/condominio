@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap');
 
 :root {
     --header: #272424;
     --label: #BCC2F5;
     --card: #EEE7E7;
+    --rotulo: rgb(185, 115, 23);
+    --linha1: burlywood;    
+    --linha2: rgb(131, 56, 26);
 }
 
 body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: roboto;
+    font-family: Poppins;
 }
 
 header {
@@ -56,7 +59,12 @@ header ul {
     margin: 10px 0 0 0;
 }
 
-.resumo {
+.relatorio-pgto-futuro .resumo {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.relatorio-pgto-aberto .resumo {
     display: grid;
     grid-template-columns: 60% 40%;
 }
@@ -74,9 +82,21 @@ header ul {
 }
 
 table {
-    margin: 10px auto;
-    padding: 10px 10px;
     width: 100%;
+    border-spacing: 0;
+}
+
+thead {
+    background-color:var(--rotulo);
+    text-align: left;
+}
+
+th, tr, td {
+    padding: 5px 0 5px 10px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--linha1);
 }
 
 .detalhes {
