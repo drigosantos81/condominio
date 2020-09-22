@@ -24,8 +24,8 @@ server.get('/', function(req, res) {
     return res.render('index');
 });
 
-server.get('/cadastros', function(req, res) {
-    return res.render('admin/cadastros');
+server.get('/moradores', function(req, res) {
+    return res.render('admin/moradores');
 });
 
 server.get('/fornecedores', function(req, res) {
