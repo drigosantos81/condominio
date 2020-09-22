@@ -1,8 +1,14 @@
 {% extends 'layout.html' %}
 
+{% set pageId = 'moradores' %}
+
 {% block title %}
     <title>Moradores | Edf. Alcides</title>
 {% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/moradores.css">
+{% endblock styles %}
 
 {% block content %}
 
@@ -10,38 +16,55 @@
         <h2>Moradores</h2>
     </section>
 
-    <div class="relatorio-pgto-futuro">
-        <div class="resumo">
-            <h3>Contas a pagar</h3>
-            <h4>Total: R$ 350,00</h4>
+    <div class="moradores">
+        <div class="unidades">
+            <div class="desc-ap">
+                <h3>101</h3>
+                <h2>Carla Mota</h2>
+            </div>            
+            <p>Histórico</p>
         </div>
+        <div class="unidades">
+            <div class="desc-ap">
+                <h3>102</h3>
+                <h2>Cláudia Andrade</h2>
+            </div>
+            <p>Histórico</p>
+        </div>
+    </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>101 - Carla Mota</th>
-                    <th>Situação</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>31/05/2020</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>31/05/2020</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>31/06/2020</td>
-                    <td>11</td>
-                </tr>
-                <tr>
-                    <td>31/06/2020</td>
-                    <td>18</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="moradores">
+        <div class="unidades">
+            <div class="desc-ap">
+                <h3>201</h3>
+                <h2>Herliene Bandeira</h2>
+            </div>
+            <p>Histórico</p>
+        </div>
+        <div class="unidades">
+            <div class="desc-ap">
+                <h3>202</h3>
+                <h2>Angélica Lobo</h2>
+            </div>
+            <p>Histórico</p>
+        </div>
+    </div>
+
+    <div class="moradores">
+        <div class="unidades">
+            <div class="desc-ap">
+                <h3>301</h3>
+                <h2>Carla Simões</h2>
+            </div>
+            <p>Histórico</p>
+        </div>
+        <div class="unidades">
+            <div class="desc-ap">
+                <h3>302</h3>
+                <h2>Bernadete / Ísis</h2>
+            </div>
+            <p>Histórico</p>
+        </div>
     </div>
 
 {% endblock %}

@@ -1,0 +1,53 @@
+.moradores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.unidades {
+    height: 50px;
+    background-color: var(--card);
+    margin: 0 5px 5px 0;
+    padding: 0 0 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.desc-ap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.desc-ap p {
+    background: #4c5EFB;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.desc-ap h2 {
+    background: #4c5EFB;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.unidades p:last-child {
+    background: #439E3B;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
