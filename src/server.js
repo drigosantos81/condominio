@@ -1,8 +1,8 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
+const methodOverride = require('method-override');
 
 // const routes = require('./routes');
-// const methodOverride = require('method-override');
 
 const server = express();
 
@@ -14,14 +14,18 @@ server.use(methodOverride('_method'));
 
 server.set("view engine", "html");
 
-server.get('/', function(req, res) {
-    return res.render('index');
-});
-
 nunjucks.configure("src", {
     express: server,
     autoescape: false,
     noCache: true
+});
+
+server.get('/', function(req, res) {
+    return res.render('index');
+});
+
+server.get('/cadastros', function(req, res) {
+    return res.render('admin/cadastros');
 });
 
 server.listen(5002, function() {
