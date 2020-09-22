@@ -1,190 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edf. Alcides</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/assets/favicon-16x16.png">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/parts/footer.css">
-</head>
-<body>
-    <header>
-        <ul>
-            <li><a href="/cadastros">Cadastros</a></li>
-            <li>Recebimentos</li>
-            <li>Despesas</li>
-            <li>Relatórios</li>
-        </ul>
-    </header>
+{% extends 'layout.html' %}
 
-    <div class="container">
-        <section class="saldo">
-            <div>
-                <h3>Saldo: </h3>
-                <h3>R$ 15.000,00</h3>
-            </div>
-            
-        </section>
+{% block content %}
 
-        <div class="relatorio-pgto-futuro">
-            <div class="resumo">
-                <h3>Contas a pagar</h3>
-                <h4>Total: R$ 350,00</h4>
-            </div>
+    <section class="saldo">
+        <div>
+            <h3>Saldo: </h3>
+            <h3>R$ 15.000,00</h3>
+        </div>
+        
+    </section>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Vencimento</th>
-                        <th>Cód.</th>
-                        <th>Fornecedor</th>
-                        <th>Descrição</th>
-                        <th>Competência</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>31/05/2020</td>
-                        <td>10</td>
-                        <td>Coelba</td>
-                        <td>Energia</td>
-                        <td>04/2020</td>
-                        <td>R$ 350,00</td>
-                    </tr>
-                    <tr>
-                        <td>31/05/2020</td>
-                        <td>12</td>
-                        <td>Embasa</td>
-                        <td>Água</td>
-                        <td>04/2020</td>
-                        <td>R$ 60,00</td>
-                    </tr>
-                    <tr>
-                        <td>31/06/2020</td>
-                        <td>11</td>
-                        <td>Coelba</td>
-                        <td>Energia</td>
-                        <td>05/2020</td>
-                        <td>R$ 53,00</td>
-                    </tr>
-                    <tr>
-                        <td>31/06/2020</td>
-                        <td>18</td>
-                        <td>Embasa</td>
-                        <td>Água</td>
-                        <td>05/2020</td>
-                        <td>R$ 23,00</td>
-                    </tr>
-                    <tr>
-                        <td>29/07/2020</td>
-                        <td>12</td>
-                        <td>Embasa</td>
-                        <td>Energia</td>
-                        <td>06/2020</td>
-                        <td>R$ 47,00</td>
-                    </tr>
-                    <tr>
-                        <td>29/07/2020</td>
-                        <td>12</td>
-                        <td>Embasa</td>
-                        <td>Energia</td>
-                        <td>06/2020</td>
-                        <td>R$ 47,00</td>
-                    </tr>
-                    <tr>
-                        <td>29/07/2020</td>
-                        <td>12</td>
-                        <td>Embasa</td>
-                        <td>Energia</td>
-                        <td>06/2020</td>
-                        <td>R$ 47,00</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="relatorio-pgto-futuro">
+        <div class="resumo">
+            <h3>Contas a pagar</h3>
+            <h4>Total: R$ 350,00</h4>
         </div>
 
-        <div class="relatorio-pgto-aberto">
-            <div class="resumo">
-                <h3>Contas vencidas</h3>
-                <h4>Total: R$ 350,00</h4>
-            </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vencimento</th>
+                    <th>Cód.</th>
+                    <th>Fornecedor</th>
+                    <th>Descrição</th>
+                    <th>Competência</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>31/05/2020</td>
+                    <td>10</td>
+                    <td>Coelba</td>
+                    <td>Energia</td>
+                    <td>04/2020</td>
+                    <td>R$ 350,00</td>
+                </tr>
+                <tr>
+                    <td>31/05/2020</td>
+                    <td>12</td>
+                    <td>Embasa</td>
+                    <td>Água</td>
+                    <td>04/2020</td>
+                    <td>R$ 60,00</td>
+                </tr>
+                <tr>
+                    <td>31/06/2020</td>
+                    <td>11</td>
+                    <td>Coelba</td>
+                    <td>Energia</td>
+                    <td>05/2020</td>
+                    <td>R$ 53,00</td>
+                </tr>
+                <tr>
+                    <td>31/06/2020</td>
+                    <td>18</td>
+                    <td>Embasa</td>
+                    <td>Água</td>
+                    <td>05/2020</td>
+                    <td>R$ 23,00</td>
+                </tr>
+                <tr>
+                    <td>29/07/2020</td>
+                    <td>12</td>
+                    <td>Embasa</td>
+                    <td>Energia</td>
+                    <td>06/2020</td>
+                    <td>R$ 47,00</td>
+                </tr>
+                <tr>
+                    <td>29/07/2020</td>
+                    <td>12</td>
+                    <td>Embasa</td>
+                    <td>Energia</td>
+                    <td>06/2020</td>
+                    <td>R$ 47,00</td>
+                </tr>
+                <tr>
+                    <td>29/07/2020</td>
+                    <td>12</td>
+                    <td>Embasa</td>
+                    <td>Energia</td>
+                    <td>06/2020</td>
+                    <td>R$ 47,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Vencimento</th>
-                        <th>Cód.</th>
-                        <th>Fornecedor</th>
-                        <th>Descrição</th>
-                        <th>Competência</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>31/05/2020</td>
-                        <td>10</td>
-                        <td>Coelba</td>
-                        <td>Energia</td>
-                        <td>04/2020</td>
-                        <td>R$ 350,00</td>
-                    </tr>
-                    <tr>
-                        <td>31/05/2020</td>
-                        <td>12</td>
-                        <td>Embasa</td>
-                        <td>Água</td>
-                        <td>04/2020</td>
-                        <td>R$ 60,00</td>
-                    </tr>
-                    <tr>
-                        <td>31/06/2020</td>
-                        <td>11</td>
-                        <td>Coelba</td>
-                        <td>Energia</td>
-                        <td>05/2020</td>
-                        <td>R$ 53,00</td>
-                    </tr>
-                    <tr>
-                        <td>31/06/2020</td>
-                        <td>18</td>
-                        <td>Embasa</td>
-                        <td>Água</td>
-                        <td>05/2020</td>
-                        <td>R$ 23,00</td>
-                    </tr>
-                    <tr>
-                        <td>29/07/2020</td>
-                        <td>12</td>
-                        <td>Embasa</td>
-                        <td>Energia</td>
-                        <td>06/2020</td>
-                        <td>R$ 47,00</td>
-                    </tr>
-                    <tr>
-                        <td>29/07/2020</td>
-                        <td>12</td>
-                        <td>Embasa</td>
-                        <td>Energia</td>
-                        <td>06/2020</td>
-                        <td>R$ 47,00</td>
-                    </tr>
-                    <tr>
-                        <td>29/07/2020</td>
-                        <td>12</td>
-                        <td>Embasa</td>
-                        <td>Energia</td>
-                        <td>06/2020</td>
-                        <td>R$ 47,00</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="relatorio-pgto-aberto">
+        <div class="resumo">
+            <h3>Contas vencidas</h3>
+            <h4>Total: R$ 350,00</h4>
         </div>
-    </div>    
 
-    {% include 'parts/footer.html' %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Vencimento</th>
+                    <th>Cód.</th>
+                    <th>Fornecedor</th>
+                    <th>Descrição</th>
+                    <th>Competência</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>31/05/2020</td>
+                    <td>10</td>
+                    <td>Coelba</td>
+                    <td>Energia</td>
+                    <td>04/2020</td>
+                    <td>R$ 350,00</td>
+                </tr>
+                <tr>
+                    <td>31/05/2020</td>
+                    <td>12</td>
+                    <td>Embasa</td>
+                    <td>Água</td>
+                    <td>04/2020</td>
+                    <td>R$ 60,00</td>
+                </tr>
+                <tr>
+                    <td>31/06/2020</td>
+                    <td>11</td>
+                    <td>Coelba</td>
+                    <td>Energia</td>
+                    <td>05/2020</td>
+                    <td>R$ 53,00</td>
+                </tr>
+                <tr>
+                    <td>31/06/2020</td>
+                    <td>18</td>
+                    <td>Embasa</td>
+                    <td>Água</td>
+                    <td>05/2020</td>
+                    <td>R$ 23,00</td>
+                </tr>
+                <tr>
+                    <td>29/07/2020</td>
+                    <td>12</td>
+                    <td>Embasa</td>
+                    <td>Energia</td>
+                    <td>06/2020</td>
+                    <td>R$ 47,00</td>
+                </tr>
+                <tr>
+                    <td>29/07/2020</td>
+                    <td>12</td>
+                    <td>Embasa</td>
+                    <td>Energia</td>
+                    <td>06/2020</td>
+                    <td>R$ 47,00</td>
+                </tr>
+                <tr>
+                    <td>29/07/2020</td>
+                    <td>12</td>
+                    <td>Embasa</td>
+                    <td>Energia</td>
+                    <td>06/2020</td>
+                    <td>R$ 47,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-</body>
-</html>
+{% endblock %}

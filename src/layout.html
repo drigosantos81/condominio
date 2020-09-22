@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edf. Alcides</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/assets/favicon-16x16.png">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/parts/footer.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="/cadastros">Cadastros</a></li>
+            <li>Recebimentos</li>
+            <li>Despesas</li>
+            <li>Relatórios</li>
+        </ul>
+    </header>
+
+    <div class="container">
+
+        {% block content %}{% endblock %}
+
+    </div>    
+
+    {% include 'parts/footer.html' %}
+
+</body>
+</html>
