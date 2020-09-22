@@ -28,6 +28,10 @@ server.get('/cadastros', function(req, res) {
     return res.render('admin/cadastros');
 });
 
+server.get('/fornecedores', function(req, res) {
+    return res.render('admin/fornecedores');
+});
+
 server.listen(5002, function() {
     console.log("Servidor ligado.");    
 });

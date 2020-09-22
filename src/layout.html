@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edf. Alcides</title>
+    {% block title %}
+        <title>Edf. Alcides</title>
+    {% endblock title %}
     <link rel="icon" type="image/png" sizes="16x16" href="/img/assets/favicon-16x16.png">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/parts/footer.css">
+    <link rel="stylesheet" href="/styles/cadastros.css">
 </head>
 <body>
     <header>
@@ -14,12 +17,29 @@
             <img src="/img/assets/logo.png" alt="">
             <p><a href="/">Home</a></p>
         </div>
-        <ul>
-            <li><a href="/cadastros">Cadastros</a></li>
-            <li>Recebimentos</li>
-            <li>Despesas</li>
-            <li>Relatórios</li>
-        </ul>
+        <nav>
+            <ul class="menu">
+                <li>Cadastros
+                    <ul>
+                        <li><a href="/fornecedores">Fornecedor</a></li>
+                        <li><a href="/cadastros">Morador</a></li>
+                    </ul>
+                </li>
+                <li><a href="/cadastros">Recebimentos</a>
+                    <ul>
+                        <li><a href="/cadastros">Incluir</a></li>
+                        <li><a href="/cadastros">Consultar</a></li>
+                    </ul>
+                </li>
+                <li><a href="/cadastros">Despesas</a>
+                    <ul>
+                        <li><a href="/cadastros">Incluir</a></li>
+                        <li><a href="/cadastros">Consultar</a></li>
+                    </ul>
+                </li>
+                <li><a href="/cadastros">Relatórios</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="container">
