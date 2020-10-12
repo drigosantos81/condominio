@@ -16,13 +16,17 @@
     border: 0;
 }
 
+.init-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 body {
     font-family: Poppins;
     display: flex;
     flex-direction: column;
 }
-
-
 
 .container {
     width: 100%;
