@@ -1,0 +1,48 @@
+{% extends 'layout.njk' %}
+
+{% block title %}
+    <title>Novo Fornecedor | Edf. Alcides</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/moradores.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="container-form">
+        <h2>Cadastrar novo fornecedor</h2>
+        <form class="new-resident" action="/admin/registers/residents" method="POST">
+            <div>
+                <div>
+                    <p>Apto.</p>
+                    <input type="text" name="apt">
+                </div>
+
+                <div>
+                    <p>Nome</p>
+                    <input type="text" name="name">
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <p>E-mail</p>
+                        <input type="email" name="email">
+                    </div>
+                    
+                    <div>
+                        <p>Telefone</p>
+                        <input type="text" name="telefone">
+                    </div>
+                </div>
+
+                <div>
+                    <input type="file" name="photo">
+                </div>
+            </div>
+            
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+{% endblock %}
