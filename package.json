@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/drigosantos81/condominio#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "method-override": "^3.0.0",
     "nodemon": "^2.0.4",
     "nunjucks": "^3.2.2"
